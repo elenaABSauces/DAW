@@ -1,0 +1,24 @@
+;BIND data for eab.local
+$TTL 604800
+@ IN SOA eabused.eab.local. root.localhost. (
+		1	; Serial
+		604800		; Refresh
+		86400		; Retry
+		2419200		; Expire
+		3600 )		; Negative cache TTL
+;
+@		IN NS eabused.eab.local.
+; Registros Host
+@		IN A	192.168.0.216
+eab  	IN A	192.168.0.216
+eabused		IN A	192.168.0.216
+
+;Registros Alias
+daw201		IN CNAME	eabused.eab.local.
+daw202		IN CNAME	eabused.eab.local.
+daw203		IN CNAME	eabused.eab.local.
+daw204		IN CNAME	eabused.eab.local.
+www.daw201	IN CNAME	eabused.eab.local.
+www.daw202	IN CNAME	eabused.eab.local.
+www.daw203	IN CNAME	eabused.eab.local.
+www.daw204	IN CNAME	eabused.eab.local.
